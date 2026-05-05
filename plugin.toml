@@ -1,0 +1,14 @@
+[plugin]
+name = "fledge-plugin-json"
+version = "0.1.0"
+description = "JSON toolkit — format, validate, query, and minify JSON from the terminal"
+author = "corvid-agent"
+
+[[commands]]
+name = "json"
+description = "JSON formatting, validation, and query tools"
+binary = "bin/fledge-json"
+
+[hooks]
+build = "bash build.sh"
+post_install = "bash build.sh"
